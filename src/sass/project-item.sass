@@ -1,0 +1,62 @@
+.project-item
+    &:hover
+        text-decoration: none
+        .project-item__caption
+            background-color: #362f2d
+            &::before
+                border-bottom-color: #362f2d
+        .project-item__title
+            color: #ffffff
+        .project-item__subtitle
+            color: #c7b299
+        .project-item__more
+            display: flex
+
+.project-item__more
+    display: none
+    align-items: center
+    justify-content: center
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 1
+    background-color: rgba(0,0,0,0.5)
+
+.project-item__link-icon
+    width: 26px
+    height: 26px
+    fill: #ffffff
+
+.project-item__zoom-icon
+    width: 26px
+    height: 26px
+    fill: #c7b299
+
+.project-item__caption
+    padding: 30px
+    background-color: #fbfaf8
+    position: relative
+    z-index: 1
+    &::before
+        content: ''
+        border: 30px solid transparent
+        border-bottom: 30px solid #fbfaf8
+        position: absolute
+        top: -45px
+        left: 20px
+        z-index: 0
+
+.project-item__title
+    margin-bottom: 14px
+    color: #c7b299
+    font-family: $font-secondary
+    font-size: 20px
+    font-weight: 500
+
+.project-item__subtitle
+    color: #d1d1d1
+    font-size: 14px
+    font-weight: 300
+    line-height: 1.4

@@ -1,2 +1,48 @@
 .header
+    width: 100%
     position: absolute
+    top: 40px
+    z-index: 1
+
+.header__content
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.header__nav
+    display: flex
+
+.header__menu
+    display: flex
+    margin: 0
+    padding: 0
+    list-style-type: none
+
+.header__menu-item
+    margin-right: 27px
+    a
+        color: #ffffff
+        font-size: 14px
+        font-weight: 300
+        &:hover
+            color: #c7b299
+            text-decoration: none
+
+.header__cart
+    margin-right: 27px
+    .header__cart-icon:hover
+        fill: #c7b299
+
+.header__cart-icon
+    width: 18px
+    height: 24px
+    fill: #ffffff
+
+.header__search
+    .header__search-icon:hover
+        fill: #c7b299
+
+.header__search-icon
+    width: 24px
+    height: 24px
+    fill: #ffffff

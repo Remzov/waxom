@@ -1,0 +1,265 @@
+.landing__intro
+    height: 100vh
+
+.carousel-item__content
+    width: 600px
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    text-align: center
+
+.carousel-item
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        background-color: rgba(0,0,0,0.5)
+
+.carousel-item__title-first
+    margin-bottom: 10px
+    color: #ffffff
+    font-family: $font-secondary
+    font-size: 36px
+    font-weight: 500
+    line-height: 1
+
+.carousel-item__title-second
+    margin-bottom: 18px
+    color: #ffffff
+    font-family: $font-secondary
+    font-size: 52px
+    font-weight: 800
+    letter-spacing: 0.5px
+    line-height: 1
+
+.carousel-item__text
+    margin-bottom: 45px
+    color: #ffffff
+    font-size: 16px
+    font-weight: 300
+    letter-spacing: -0.05px
+
+.carousel-control-prev-icon
+    width: 50px
+    height: 50px
+    margin-left: 30%
+    background-image: none
+    border-left: 3px solid rgba(255,255,255,0.5)
+    border-bottom: 3px solid rgba(255,255,255,0.5)
+    transform: rotate(45deg)
+
+.carousel-control-next-icon
+    width: 50px
+    height: 50px
+    margin-right: 30%
+    background-image: none
+    border-left: 3px solid rgba(255,255,255,0.5)
+    border-bottom: 3px solid rgba(255,255,255,0.5)
+    transform: rotate(225deg)
+
+.carousel-indicators
+    align-items: center
+    bottom: 40px
+    li
+        width: 11px
+        height: 11px
+        margin: 0 5px
+        border-radius: 50%
+        background-color: #ffffff
+        opacity: 0.5
+        box-sizing: content-box
+        &.active
+            border: 2px solid #d3c1ad
+            background-color: transparent
+
+.landing__features
+    margin: 10% 0
+
+.landing__features-wrapper
+    display: grid
+     align-items: flex-start
+    // justify-content: space-between
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    grid-gap: 33px
+
+.features-item
+    display: block
+    text-align: center
+    position: relative
+    &::after
+        content: ''
+        width: 70px
+        height: 3px
+        background-color: #f1eee9
+        position: absolute
+        bottom: -30px
+        left: 50%
+        transform: translateX(-50%)
+    &:hover
+        text-decoration: none
+        svg
+            fill: #c7b299
+        .features-item__title
+            color: #c7b299
+        .features-item__text
+            color: #8c8c8c
+        &::after
+            background-color: #c7b299
+
+.features-item__pic
+    display: block
+    height: 50px
+    display: flex
+    align-items: flex-end
+    justify-content: center
+    margin-bottom: 30px
+
+.features-item__title
+    display: block
+    margin-bottom: 19px
+    color: #555555
+    font-family: $font-secondary
+    font-size: 22px
+    font-weight: 600
+
+.features-item__text
+    display: block
+    color: #8c8c8c
+    font-size: 14px
+    font-weight: 300
+    line-height: 1,7
+
+.features-item__pic-design
+    width: 49px
+    height: 49px
+    fill: #555555
+
+.features-item__pic-development
+    width: 44px
+    height: 40px
+    fill: #555555
+
+.features-item__pic-customiztion
+    width: 44px
+    height: 44px
+    fill: #555555
+
+.features-item__pic-marketing
+    width: 52px
+    height: 56px
+    fill: #555555
+
+.landing__themes-demo
+    padding-top: 5%
+    background-color: #fbfaf8
+    text-align: center
+
+.landing__themes-title
+    margin-bottom: 24px
+
+.landing__themes-text
+    margin-bottom: 40px
+
+.landing__themes-browser
+    position: relative
+
+.landing__themes-browser-center
+    max-width: 770px
+    margin: 0 auto
+    position: relative
+    z-index: 2
+
+.landing__themes-browser-left
+    position: absolute
+    bottom: 0
+    left: 0
+    z-index: 1
+
+.landing__themes-browser-right
+    position: absolute
+    right: 0
+    bottom: 0
+    z-index: 1
+
+.landing__themes-purchase
+    padding: 50px 0
+    background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%)
+
+.landing__themes-purchase-wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.landing__themes-purchase-title
+    margin-bottom: 8px
+    color: #ffffff
+    font-family: $font-secondary
+    font-size: 28px
+    font-weight: 400
+    line-height: 1
+    span
+        color: #c7b299
+
+.landing__themes-purchase-reminder
+    color: #615855
+    font-size: 18px
+    font-weight: 300
+
+.landing__projects
+    padding-top: 5%
+
+.landing__projects-title
+    margin-bottom: 24px
+
+.landing__projects-text
+    margin-bottom: 40px
+
+.landing__projects-filter
+    display: flex
+    justify-content: center
+    margin-bottom: 40px
+
+.landing__projects-filter-wrapper
+    display: flex
+    flex-wrap: wrap
+    margin: 0 -5px
+
+.landing__projects-filter-item
+    margin: 0 5px
+    padding: 10px 20px
+    border-radius: 3px
+    border: 1px solid #ebebeb
+    background-color: #ffffff
+    color: #8c8c8c
+    font-size: 14px
+    font-weight: 300
+    line-height: 1
+    cursor: pointer
+    transition: border-color 0.25s, color 0.25s
+    &_isActive
+        color: #ffffff
+        background-color: #998675
+        border-color: #998675
+    &:hover
+        border-color: #998675
+        color: #998675
+        transition: border-color 0.25s, color 0.25s
+
+.landing__projects-pool
+    display: grid
+    grid-template-columns: repeat(auto-fit, 370px)
+    grid-gap: 30px
+    margin-bottom: 40px
+
+.project-item__image
+    height: 237px
+
+.landing__projects-button
+    margin: 0 auto 80px
+    position: relative
+    left: 50%
+    transform: translateX(-50%)

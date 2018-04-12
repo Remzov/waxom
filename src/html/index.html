@@ -10,43 +10,46 @@
 <body>
     <div class="page landing">
         <header class="header">
-            <div class="header__leftside">
-                <a class="logo" href="#">
-                    <img src="../img/logo.svg" alt="logo" title="logo">Waxom
-                </a>
+            <div class="container">
+                <div class="header__content">
+                    <a class="logo" href="#">
+                        <img src="../img/logo.svg" alt="logo" title="logo">
+                        Waxom
+                    </a>
+                    <nav class="header__nav">
+                        <ul class="header__menu">
+                            <li class="header__menu-item"><a href="#">Home</a></li>
+                            <li class="header__menu-item"><a href="#">About Us</a></li>
+                            <li class="header__menu-item"><a href="#">Portfolio</a></li>
+                            <li class="header__menu-item"><a href="#">Features</a></li>
+                            <li class="header__menu-item"><a href="#">Blog</a></li>
+                            <li class="header__menu-item"><a href="#">Pricing</a></li>
+                            <li class="header__menu-item"><a href="#">Shortcodes</a></li>
+                            <li class="header__menu-item"><a href="#">Contact</a></li>
+                        </ul>
+                        <a class="header__cart" href="#">
+                            <svg class="header__cart-icon">
+                                <use xlink:href="img/svg-sprite.svg#icon-cart">
+                            </svg>
+                        </a>
+                        <a class="header__search" href="#">
+                            <svg class="header__search-icon">
+                                <use xlink:href="img/svg-sprite.svg#icon-search">
+                            </svg>
+                        </a>
+                    </nav>
+                </div>
             </div>
-            <nav class="header__rightside">
-                <ul class="header__menu">
-                    <li class="header__menu-item"><a href="#">Home</a></li>
-                    <li class="header__menu-item"><a href="#">About Us</a></li>
-                    <li class="header__menu-item"><a href="#">Portfolio</a></li>
-                    <li class="header__menu-item"><a href="#">Features</a></li>
-                    <li class="header__menu-item"><a href="#">Blog</a></li>
-                    <li class="header__menu-item"><a href="#">Pricing</a></li>
-                    <li class="header__menu-item"><a href="#">Shortcodes</a></li>
-                    <li class="header__menu-item"><a href="#">Contact</a></li>
-                </ul>
-                <div class="header__cart">
-                    <svg class="header__cart-icon">
-                        <use xlink:href="../img/svg-sprite.svg#icon-cart">
-                    </svg>
-                </div>
-                <div class="header__search">
-                    <svg class="header__search-icon">
-                        <use xlink:href="../img/svg-sprite.svg#icon-search">
-                    </svg>
-                </div>
-            </nav>
         </header>
-        <section class="landing__intro">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="false" data-pause="true">
+        <section class="landing__intro embed-responsive">
+            <div id="carouselExampleIndicators" class="carousel slide embed-responsive-item embed-responsive" data-ride="false" data-pause="true">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
+                <div class="carousel-inner embed-responsive-item embed-responsive">
+                    <div class="carousel-item active embed-responsive-item">
                         <div class="carousel-item__content">
                             <div class="carousel-item__title-first">
                                 Unique and Modern Design
@@ -57,15 +60,39 @@
                             <div class="carousel-item__text">
                                 Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
                             </div>
-                            <a class="carousel-item__button" href="#">Get started</a>
+                            <a class="button-more" href="#">Get started</a>
                         </div>
-                      <img class="d-block w-100" src="../img/intro-1.jpg" alt="First slide">
+                        <img class="d-block w-100 h-100" src="../img/intro-1.jpg" alt="First slide">
                     </div>
-                    <div class="carousel-item">
-                      <img class="d-block w-100" src="../img/intro-2.jpg" alt="Second slide">
+                    <div class="carousel-item embed-responsive-item">
+                        <div class="carousel-item__content">
+                            <div class="carousel-item__title-first">
+                                Unique and Modern Design
+                            </div>
+                            <div class="carousel-item__title-second">
+                                Portfolio PSD Template
+                            </div>
+                            <div class="carousel-item__text">
+                                Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+                            </div>
+                            <a class="button-more" href="#">Get started</a>
+                        </div>
+                        <img class="d-block w-100 h-100" src="../img/intro-2.jpg" alt="Second slide">
                     </div>
-                    <div class="carousel-item">
-                      <img class="d-block w-100" src="../img/intro-3.jpg" alt="Third slide">
+                    <div class="carousel-item embed-responsive-item">
+                        <div class="carousel-item__content">
+                            <div class="carousel-item__title-first">
+                                Unique and Modern Design
+                            </div>
+                            <div class="carousel-item__title-second">
+                                Portfolio PSD Template
+                            </div>
+                            <div class="carousel-item__text">
+                                Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+                            </div>
+                            <a class="button-more" href="#">Get started</a>
+                        </div>
+                        <img class="d-block w-100 h-100" src="../img/intro-3.jpg" alt="Third slide">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -79,224 +106,242 @@
             </div>
         </section>
         <section class="landing__features">
-            <div class="features-item">
-                <div class="features-item__icon">
-                    <svg>
-                        <use xlink:href="../img/svg-sprite.svg#pic-design">
-                    </svg>
-                </div>
-                <div class="features-item__title">
-                    Web & App Design
-                </div>
-                <div class="features-item__text">
-                    Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
-                </div>
-            </div>
-            <div class="features-item">
-                <div class="features-item__icon">
-                    <svg>
-                        <use xlink:href="../img/svg-sprite.svg#pic-development">
-                    </svg>
-                </div>
-                <div class="features-item__title">
-                    Development
-                </div>
-                <div class="features-item__text">
-                    Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.
-                </div>
-            </div>
-            <div class="features-item">
-                <div class="features-item__icon">
-                    <svg>
-                        <use xlink:href="../img/svg-sprite.svg#pic-customiztion">
-                    </svg>
-                </div>
-                <div class="features-item__title">
-                    Customization
-                </div>
-                <div class="features-item__text">
-                    Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
-                </div>
-            </div>
-            <div class="features-item">
-                <div class="features-item__icon">
-                    <svg>
-                        <use xlink:href="../img/svg-sprite.svg#pic-marketing">
-                    </svg>
-                </div>
-                <div class="features-item__title">
-                    Marketing
-                </div>
-                <div class="features-item__text">
-                    Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
+            <div class="container">
+                <div class="landing__features-wrapper">
+                    <a class="features-item" href="#">
+                        <div class="features-item__pic">
+                            <svg class="features-item__pic-design">
+                                <use xlink:href="img/svg-sprite.svg#pic-design">
+                            </svg>
+                        </div>
+                        <div class="features-item__title">
+                            Web & App Design
+                        </div>
+                        <div class="features-item__text">
+                            Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
+                        </div>
+                    </a>
+                    <a class="features-item" href="#">
+                        <span class="features-item__pic">
+                            <svg class="features-item__pic-development">
+                                <use xlink:href="img/svg-sprite.svg#pic-development">
+                            </svg>
+                        </span>
+                        <span class="features-item__title">
+                            Development
+                        </span>
+                        <span class="features-item__text">
+                            Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.
+                        </span>
+                    </a>
+                    <a class="features-item" href="#">
+                        <span class="features-item__pic">
+                            <svg class="features-item__pic-design">
+                                <use xlink:href="img/svg-sprite.svg#pic-customization">
+                            </svg>
+                        </span>
+                        <span class="features-item__title">
+                            Customization
+                        </span>
+                        <span class="features-item__text">
+                            Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
+                        </span>
+                    </a>
+                    <a class="features-item" href="#">
+                        <span class="features-item__pic">
+                            <svg class="features-item__pic-design">
+                                <use xlink:href="img/svg-sprite.svg#pic-marketing">
+                            </svg>
+                        </span>
+                        <span class="features-item__title">
+                            Marketing
+                        </span>
+                        <span class="features-item__text">
+                            Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
+                        </span>
+                    </a>
                 </div>
             </div>
         </section>
         <section class="landing__themes">
             <div class="landing__themes-demo">
-                <h2 class="landing__themes-title">
+                <h2 class="landing__themes-title section-title">
                     Waxom is Realization of your Ideas.
                 </h2>
-                <div class="landing__themes-text">
+                <div class="landing__themes-text section-desc">
                     Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
                 </div>
-                <div class="landing__themes-browser">
-                    <img class="landing__themes-browser-center" src="../img/browser-center.jpg" alt="">
-                    <img class="landing__themes-browser-left" src="../img/browser-left.jpg" alt="">
-                    <img class="landing__themes-browser-right" src="../img/browser-right.jpg" alt="">
+                <div class="container">
+                    <div class="landing__themes-browser clearfix">
+                        <img class="landing__themes-browser-center" src="../img/browser-center.jpg" alt="">
+                        <img class="landing__themes-browser-left" src="../img/browser-left.jpg" alt="">
+                        <img class="landing__themes-browser-right" src="../img/browser-right.jpg" alt="">
+                    </div>
                 </div>
             </div>
             <div class="landing__themes-purchase">
-                <div class="landing__themes-purchase-left">
-                    <div class="landing__themes-purchase-title">
-                        <span>Waxom</span> Multipurpose WordPress Theme
+                <div class="container">
+                    <div class="landing__themes-purchase-wrapper">
+                        <div>
+                            <div class="landing__themes-purchase-title">
+                                <span>Waxom</span> Multipurpose WordPress Theme
+                            </div>
+                            <div class="landing__themes-purchase-reminder">
+                                Don't Forget to Rate the Template. Thanks so much!
+                            </div>
+                        </div>
+                        <a href="#" class="button-more">Purchase Now</a>
                     </div>
-                    <div class="landing__themes-purchase-reminder">
-                        Don't Forget to Rate the Template. Thanks so much!
-                    </div>
-                </div>
-                <div class="landing__themes-purchase-right">
-                    <a href="#" class="landing__themes-purchase-button">Purchase Now</a>
                 </div>
             </div>
         </section>
         <section class="landing__projects">
-            <h2 class="landing__projects-title">
+            <h2 class="landing__projects-title section-title">
                 Our Latest Projects.
             </h2>
-            <div class="landing__projects-text">
+            <div class="landing__projects-text section-desc">
                 Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
             </div>
-            <div class="landing__projects-filter">
-                <button class="landing__projects-filter-item" type="button">All</button>
-                <button class="landing__projects-filter-item" type="button">Web Design</button>
-                <button class="landing__projects-filter-item" type="button">Mobile App</button>
-                <button class="landing__projects-filter-item" type="button">Illustration</button>
-                <button class="landing__projects-filter-item" type="button">Photography</button>
+            <div class="container">
+                <div class="landing__projects-filter">
+                    <div class="landing__projects-filter-wrapper">
+                        <button class="landing__projects-filter-item landing__projects-filter-item_isActive" type="button">All</button>
+                        <button class="landing__projects-filter-item" type="button">Web Design</button>
+                        <button class="landing__projects-filter-item" type="button">Mobile App</button>
+                        <button class="landing__projects-filter-item" type="button">Illustration</button>
+                        <button class="landing__projects-filter-item" type="button">Photography</button>
+                    </div>
+                </div>
+                <div class="landing__projects-pool">
+                    <article class="project-item">
+                        <div class="project-item__image embed-responsive">
+                            <img class="embed-responsive-item" src="../img/project-1.jpg" alt="">
+                            <div class="project-item__more">
+                                <svg class="project-item__link-icon">
+                                    <use xlink:href="../svg-sprite.svg#icon-search">
+                                </svg>
+                                <svg class="project-item__zoom-icon">
+                                    <use xlink:href="../svg-sprite.svg#icon-search">
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-item__caption">
+                            <div class="project-item__title">
+                                Claritas Etiam Processus
+                            </div>
+                            <div class="project-item__subtitle">
+                                Photography, Nature
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-item">
+                        <div class="project-item__image embed-responsive">
+                            <img class="embed-responsive-item" src="../img/project-2.jpg" alt="">
+                            <div class="project-item__more">
+                                <svg class="project-item__link-icon">
+                                    <use xlink:href="../svg-sprite.svg#icon-link">
+                                </svg>
+                                <svg class="project-item__zoom-icon">
+                                    <use xlink:href="../svg-sprite.svg#zoom-link">
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-item__caption">
+                            <div class="project-item__title">
+                                Quam Nutamus Farum
+                            </div>
+                            <div class="project-item__subtitle">
+                                Graphic Design, Mock-Up
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-item">
+                        <div class="project-item__image embed-responsive">
+                            <img class="embed-responsive-item" src="../img/project-3.jpg" alt="">
+                            <div class="project-item__more">
+                                <svg class="project-item__link-icon">
+                                    <use xlink:href="../svg-sprite.svg#icon-link">
+                                </svg>
+                                <svg class="project-item__zoom-icon">
+                                    <use xlink:href="../svg-sprite.svg#zoom-link">
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-item__caption">
+                            <div class="project-item__title">
+                                Usus Legentis Videntur
+                            </div>
+                            <div class="project-item__subtitle">
+                                Photography, Holiday
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-item">
+                        <div class="project-item__image embed-responsive">
+                            <img class="embed-responsive-item" src="../img/project-4.jpg" alt="">
+                            <div class="project-item__more">
+                                <svg class="project-item__link-icon">
+                                    <use xlink:href="../svg-sprite.svg#icon-link">
+                                </svg>
+                                <svg class="project-item__zoom-icon">
+                                    <use xlink:href="../svg-sprite.svg#zoom-link">
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-item__caption">
+                            <div class="project-item__title">
+                                Claritas Etiam Processus
+                            </div>
+                            <div class="project-item__subtitle">
+                                Photography, Nature
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-item">
+                        <div class="project-item__image embed-responsive">
+                            <img class="embed-responsive-item" src="../img/project-5.jpg" alt="">
+                            <div class="project-item__more">
+                                <svg class="project-item__link-icon">
+                                    <use xlink:href="../svg-sprite.svg#icon-link">
+                                </svg>
+                                <svg class="project-item__zoom-icon">
+                                    <use xlink:href="../svg-sprite.svg#zoom-link">
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-item__caption">
+                            <div class="project-item__title">
+                                Quam Nutamus Farum
+                            </div>
+                            <div class="project-item__subtitle">
+                                Graphic Design, Mock-Up
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-item">
+                        <div class="project-item__image embed-responsive">
+                            <img class="embed-responsive-item" src="../img/project-6.jpg" alt="">
+                            <div class="project-item__more">
+                                <svg class="project-item__link-icon">
+                                    <use xlink:href="../svg-sprite.svg#icon-link">
+                                </svg>
+                                <svg class="project-item__zoom-icon">
+                                    <use xlink:href="../svg-sprite.svg#zoom-link">
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-item__caption">
+                            <div class="project-item__title">
+                                Usus Legentis Videntur
+                            </div>
+                            <div class="project-item__subtitle">
+                                Photography, Holiday
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <button class="landing__projects-button button-more" type="button">Load More</button>
             </div>
-            <div class="landing__projects-pool">
-                <article class="project-item">
-                    <div class="project-item__image">
-                        <div class="project-item__more">
-                            <svg class="project-item__link">
-                                <use xlink:href="../svg-sprite.svg#link">
-                            </svg>
-                            <svg class="project-item__zoom">
-                                <use xlink:href="../svg-sprite.svg#zoom">
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="project-item__caption">
-                        <div class="project-item__title">
-                            Claritas Etiam Processus
-                        </div>
-                        <div class="project-item__subtitle">
-                            Photography, Nature
-                        </div>
-                    </div>
-                </article>
-                <article class="project-item">
-                    <div class="project-item__image">
-                        <div class="project-item__more">
-                            <svg class="project-item__link">
-                                <use xlink:href="../svg-sprite.svg#link">
-                            </svg>
-                            <svg class="project-item__zoom">
-                                <use xlink:href="../svg-sprite.svg#zoom">
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="project-item__caption">
-                        <div class="project-item__title">
-                            Quam Nutamus Farum
-                        </div>
-                        <div class="project-item__subtitle">
-                            Graphic Design, Mock-Up
-                        </div>
-                    </div>
-                </article>
-                <article class="project-item">
-                    <div class="project-item__image">
-                        <div class="project-item__more">
-                            <svg class="project-item__link">
-                                <use xlink:href="../svg-sprite.svg#link">
-                            </svg>
-                            <svg class="project-item__zoom">
-                                <use xlink:href="../svg-sprite.svg#zoom">
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="project-item__caption">
-                        <div class="project-item__title">
-                            Usus Legentis Videntur
-                        </div>
-                        <div class="project-item__subtitle">
-                            Photography, Holiday
-                        </div>
-                    </div>
-                </article>
-                <article class="project-item">
-                    <div class="project-item__image">
-                        <div class="project-item__more">
-                            <svg class="project-item__link">
-                                <use xlink:href="../svg-sprite.svg#link">
-                            </svg>
-                            <svg class="project-item__zoom">
-                                <use xlink:href="../svg-sprite.svg#zoom">
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="project-item__caption">
-                        <div class="project-item__title">
-                            Claritas Etiam Processus
-                        </div>
-                        <div class="project-item__subtitle">
-                            Photography, Nature
-                        </div>
-                    </div>
-                </article>
-                <article class="project-item">
-                    <div class="project-item__image">
-                        <div class="project-item__more">
-                            <svg class="project-item__link">
-                                <use xlink:href="../svg-sprite.svg#link">
-                            </svg>
-                            <svg class="project-item__zoom">
-                                <use xlink:href="../svg-sprite.svg#zoom">
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="project-item__caption">
-                        <div class="project-item__title">
-                            Quam Nutamus Farum
-                        </div>
-                        <div class="project-item__subtitle">
-                            Graphic Design, Mock-Up
-                        </div>
-                    </div>
-                </article>
-                <article class="project-item">
-                    <div class="project-item__image">
-                        <div class="project-item__more">
-                            <svg class="project-item__link">
-                                <use xlink:href="../svg-sprite.svg#link">
-                            </svg>
-                            <svg class="project-item__zoom">
-                                <use xlink:href="../svg-sprite.svg#zoom">
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="project-item__caption">
-                        <div class="project-item__title">
-                            Usus Legentis Videntur
-                        </div>
-                        <div class="project-item__subtitle">
-                            Photography, Holiday
-                        </div>
-                    </div>
-                </article>
-            </div>
-            <button class="landing__projects-button" type="button"></button>
         </section>
         <section class="landing__presentation">
             <div class="landing__presentation-desc">
@@ -445,7 +490,10 @@
         <section class="landing__social">
             <div class="container">
                 <div>
-                    <a class="logo" href="#">Waxom</a>
+                    <a class="logo" href="#">
+                        <img src="../img/logo.svg" alt="logo" title="logo">
+                        Waxom
+                    </a>
                     <div class="landing__social-text">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis claritatem.
                     </div>

@@ -1,0 +1,15 @@
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1230px
+);
+$grid-gutter-width: 60px;
+
+$font-primary: "Montserrat", sans-serif;
+$font-secondary: "Raleway", sans-serif;
+$font-family-base: $font-primary;
+
+$h2-font-size: 30px;
+$h2-color: #555555;
+$h2-font-weight: 600;
