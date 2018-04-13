@@ -9,7 +9,7 @@
     transform: translate(-50%,-50%)
     text-align: center
 
-.carousel-item
+.carousel-item_intro
     &::before
         content: ''
         position: absolute
@@ -43,7 +43,7 @@
     font-weight: 300
     letter-spacing: -0.05px
 
-.carousel-control-prev-icon
+.carousel-control-prev-icon_intro
     width: 50px
     height: 50px
     margin-left: 30%
@@ -52,7 +52,7 @@
     border-bottom: 3px solid rgba(255,255,255,0.5)
     transform: rotate(45deg)
 
-.carousel-control-next-icon
+.carousel-control-next-icon_intro
     width: 50px
     height: 50px
     margin-right: 30%
@@ -61,7 +61,7 @@
     border-bottom: 3px solid rgba(255,255,255,0.5)
     transform: rotate(225deg)
 
-.carousel-indicators
+.carousel-indicators_intro
     align-items: center
     bottom: 40px
     li
@@ -394,3 +394,179 @@
 
 .landing__statistic
     background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%)
+
+.landing__statistic-wrappper
+    display: flex
+    justify-content: center
+
+.landing__statistic-items
+    display: flex
+    margin: 0 -35px
+    padding: 70px 0 90px
+
+.landing__posts
+    padding: 80px 0
+
+.landing__posts-title
+    margin-bottom: 30px
+
+.landing__posts-text
+    margin-bottom: 40px
+
+.landing__posts-pool
+    display: flex
+    margin-bottom: 40px
+    padding: 0 -15px
+
+.landing__posts-control-bar
+    display: flex
+    justify-content: center
+
+.landing__posts-control
+    width: 22px
+    height: 22px
+    position: relative
+    background-color: #ffffff
+    border: 1px solid #c7b299
+    border-radius: 50%
+    cursor: pointer
+    &::before
+        content: ''
+        width: 7px
+        height: 7px
+        position: absolute
+        top: 50%
+        left: 50%
+        z-index: 1
+        border-right: 1px solid #c7b299
+        border-bottom: 1px solid #c7b299
+
+.landing__posts-control_prev
+    margin-right: 8px
+    &::before
+        transform: translate(-35%,-50%) rotate(135deg)
+
+.landing__posts-control_next
+    &::before
+        transform: translate(-65%,-50%) rotate(-45deg)
+
+.landing__posts-control_isDisabled
+    border-color: #d1d1d1
+    &::before
+        border-color: #d1d1d1
+
+.landing__clients
+    padding: 140px 0
+    background: url('../img/bg-clients.jpg') 50% 50% no-repeat
+    background-size: cover
+    position: relative
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        z-index: 1
+        background-color: rgba(0,0,0,0.5)
+
+.landing__clients-pool
+    display: flex
+    align-items: center
+    justify-content: space-between
+    position: relative
+    z-index: 2
+
+.landing__social
+    padding: 80px 0
+    background-color: #191919
+
+.landing__social-wrapper
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-gap: 40px
+
+.landing__social-logo
+    margin-bottom: 30px
+
+.landing__social-text
+    margin-bottom: 40px
+    color: #555555
+    font-size: 14px
+    font-weight: 300
+    line-height: 1.7
+
+.landing__social-title
+    margin-bottom: 30px
+    color: #ffffff
+    font-family: $font-secondary
+    font-size: 24px
+    font-weight: 700
+    line-height: 1
+
+.landing__social-post
+    display: block
+    margin-bottom: 20px
+    border-bottom: 2px solid #252525
+    &:last-of-type
+        margin-bottom: 0
+        border-bottom: 0
+    &:hover
+        .landing__social-post-date
+            color: #ffffff
+        .landing__social-post-title
+            color: #c7b299
+    &:hover
+        color: currentColor
+        text-decoration: none
+
+.landing__social-post-date
+    display: block
+    margin-bottom: 10px
+    color: #363636
+    font-size: 12px
+    font-weight: 300
+    line-height: 1
+
+.landing__social-post-title
+    display: block
+    margin-bottom: 20px
+    color: #555555
+    font-size: 14px
+    font-weight: 300
+    line-height: 1.7
+
+.landing__social-tweet
+    display: block
+    margin-bottom: 17px
+    border-bottom: 2px solid #252525
+    &:last-of-type
+        margin-bottom: 0
+        border-bottom: 0
+    &:hover
+        text-decoration: none
+        .landing__social-tweet__text
+            color: #c7b299
+        .landing__social-tweet__time
+            color: #ffffff
+
+.landing__social-tweet__text
+    display: block
+    margin-bottom: 10px
+    color: #555555
+    font-size: 14px
+    font-weight: 300
+    line-height: 1.7
+
+.landing__social-tweet__time
+    display: block
+    margin-bottom: 23px
+    color: #363636
+    font-size: 12px
+    font-weight: 300
+    line-height: 1
+
+.landing__social-dribble-grid
+    display: grid
+    grid-template-columns: repeat(2, 130px)
+    grid-gap: 10px

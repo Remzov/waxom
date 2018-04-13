@@ -1,0 +1,38 @@
+.readmore-link
+    font-size: 14px
+    font-weight: 300
+    line-height: 1
+    position: relative
+    transition: color 0.25s
+    &:hover
+
+        text-decoration: none
+        transition: color 0.25s
+        &::after
+            transition: border-left-color 0.25s
+    &::after
+        content: ''
+        position: absolute
+        top: 50%
+        right: -20px
+        transform: translateY(-50%)
+        border: 5px solid transparent
+        transition: border-left-color 0.25s
+
+.readmore-link_post
+    color: #c7b299
+    &::after
+        border-left: 5px solid  #c7b299
+    &:hover
+        color: darken(#c7b299, 15%)
+        &::after
+            border-left-color:  darken(#c7b299, 15%)
+
+.readmore-link_social
+    color: #d1d1d1
+    &::after
+        border-left: 5px solid #d1d1d1
+    &:hover
+        color: darken(#d1d1d1, 15%)
+        &::after
+            border-left-color:  darken(#d1d1d1, 15%)
